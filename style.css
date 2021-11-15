@@ -1,0 +1,238 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+p {
+  margin: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 0;
+
+  border: 1px solid hsl(0, 0%, 0%, 0.1);
+}
+
+.header {
+  height: 10%;
+  background: white;
+  padding: 10px;
+  display: flex;
+}
+
+.cover {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.profile-details {
+  height: 30%;
+  background: white;
+  margin-bottom: 2em;
+}
+
+.tweet-navigation {
+  height: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  padding: 20px 0;
+  margin: 0;
+  border-bottom: 1px solid hsl(0, 0%, 0%, 0.1);
+}
+
+.tweet-section {
+  display: flex;
+  flex-direction: column;
+  padding: 7px 0;
+  height: 100vh;
+}
+
+.profile-header {
+  display: flex;
+  margin-bottom: 4em;
+
+  position: relative;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  position: absolute;
+  top: -60px;
+  left: 15px;
+  border: 4px solid white;
+}
+.tweet-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.btn {
+  padding: 13px 20px;
+  background: hsl(210, 100%, 60%);
+  color: white;
+  font-weight: 800;
+  align-self: center;
+  border: none;
+  border-radius: 25px;
+  position: absolute;
+  top: 20px;
+  right: 15px;
+}
+
+.profile-description {
+  padding: 0 15px;
+}
+
+.larger-display-name,
+.display-name {
+  font-size: 1.1rem;
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+
+.larger-display-name {
+  position: relative;
+  margin-left: 50px;
+}
+
+.arrow {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.arrow-image {
+  width: 25px;
+  height: 20px;
+}
+
+.arrow:hover {
+  background: hsl(0, 0%, 0%, 0.1);
+  cursor: pointer;
+  border-radius: 9999em;
+}
+
+.btn:hover,
+.arrow:hover {
+  background: hsl(0, 0%, 0%, 0.1);
+  cursor: pointer;
+  color: black;
+}
+
+.larger-display-name::after,
+.display-name::after,
+.small-tweet-display-name::after {
+  content: "✔";
+  height: 5px;
+  width: 5px;
+  color: hsl(210, 100%, 60%);
+  margin: 0 5px;
+}
+
+.smaller-display-name {
+  margin-right: 7px;
+}
+
+.follower-count {
+  margin-left: 50px;
+}
+
+.tweet-nav-links {
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  font-weight: 400;
+  font-size: 0.8rem;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.tweet-nav-links:hover {
+  border-bottom: 2px solid hsl(210, 100%, 60%);
+}
+
+.tweet-nav-links:focus {
+  color: hsl(210, 100%, 60%);
+  border-bottom: 2px solid hsl(210, 100%, 60%);
+}
+
+.tweet-container {
+  display: flex;
+  padding: 7px 0 7px 0;
+  border-bottom: 1px solid hsl(0, 0%, 0%, 0.1);
+}
+
+.tweets {
+  height: 20%;
+  margin-bottom: 8px;
+  padding: 0;
+  font-size: 0.8rem;
+}
+
+.left-side {
+  margin-left: 5px;
+}
+
+.right-side {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  font-weight: 100;
+  font-size: 0.7rem;
+}
+
+.tweet-info {
+  padding: 15px 15px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  padding: 0;
+}
+
+.follower-count,
+.following,
+.tweet-info,
+.date-joined,
+.user-name {
+  color: hsl(0, 0%, 0%, 0.5);
+  font-size: 0.8rem;
+}
+
+.user-name {
+  font-size: 0.8rem;
+}
+
+.bold-number {
+  font-weight: 800;
+  color: black;
+}
+
+.calendar-pic {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+}
+
+.date-joined {
+  display: flex;
+  margin: 10px 0;
+}
+
+.small-tweet-display-name {
+  font-size: 0.9rem;
+  font-weight: 900;
+  color: black;
+}
