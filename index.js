@@ -51,8 +51,8 @@ var users = {
 //App
 
 const urlParams = new URLSearchParams(window.location.search);
-const userParameter = users[urlParams.get("user")];
-console.log(userParameter);
+const userParameter = users.user1; //[urlParams.get("user")];
+
 //Header
 const header = document.querySelector(".header");
 header.innerHTML = `<div class="arrow"><img class="arrow-image" src='assets/left-arrow.png'/></div>

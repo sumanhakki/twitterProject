@@ -54,7 +54,6 @@ p {
   display: flex;
   flex-direction: column;
   padding: 7px 0;
-  height: 100vh;
 }
 
 .profile-header {
@@ -173,6 +172,9 @@ p {
   display: flex;
   padding: 7px 0 7px 0;
   border-bottom: 1px solid hsl(0, 0%, 0%, 0.1);
+}
+.tweet-container:last-child {
+  border: none;
 }
 
 .tweets {
