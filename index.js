@@ -51,7 +51,7 @@ var users = {
 //App
 
 const urlParams = new URLSearchParams(window.location.search);
-const userParameter = users.user1; //[urlParams.get("user")];
+const userParameter = users[urlParams.get("user")];
 
 //Header
 const header = document.querySelector(".header");
