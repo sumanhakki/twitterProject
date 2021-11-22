@@ -6,4 +6,5 @@ This is a Freemote project that was created for instructor review process.
 
 ## Project set-up
 -Usual github routine. Change url user=user2 in order to view second user profile
+
 -The extra timeline button is for viewing the bonus part of the project
