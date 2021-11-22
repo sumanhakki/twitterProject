@@ -56,6 +56,24 @@ p {
   padding: 7px 0;
 }
 
+.tweet-container {
+  display: flex;
+  padding: 7px 0 7px 0;
+  border-bottom: 1px solid hsl(0, 0%, 0%, 0.1);
+}
+.tweet-container2 {
+  display: flex;
+  padding: 7px 0 7px 0;
+  border: 1px solid hsl(0, 0%, 0%, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+.tweet-container:last-child {
+  border: none;
+}
+.content-container {
+  margin-bottom: 3em;
+}
 .profile-header {
   display: flex;
   margin-bottom: 4em;
@@ -90,6 +108,12 @@ p {
   top: 20px;
   right: 15px;
 }
+.btn:hover,
+.timeline-btn:hover {
+  background: hsl(0, 0%, 0%, 0.1);
+  cursor: pointer;
+  color: black;
+}
 
 .profile-description {
   padding: 0 15px;
@@ -117,20 +141,11 @@ p {
   width: 25px;
   height: 20px;
 }
-
 .arrow:hover {
   background: hsl(0, 0%, 0%, 0.1);
   cursor: pointer;
   border-radius: 9999em;
 }
-
-.btn:hover,
-.arrow:hover {
-  background: hsl(0, 0%, 0%, 0.1);
-  cursor: pointer;
-  color: black;
-}
-
 .larger-display-name::after,
 .display-name::after,
 .small-tweet-display-name::after {
@@ -166,15 +181,6 @@ p {
 .tweet-nav-links:focus {
   color: hsl(210, 100%, 60%);
   border-bottom: 2px solid hsl(210, 100%, 60%);
-}
-
-.tweet-container {
-  display: flex;
-  padding: 7px 0 7px 0;
-  border-bottom: 1px solid hsl(0, 0%, 0%, 0.1);
-}
-.tweet-container:last-child {
-  border: none;
 }
 
 .tweets {
@@ -237,4 +243,17 @@ p {
   font-size: 0.9rem;
   font-weight: 900;
   color: black;
+}
+.timeline {
+  max-width: 600px;
+  margin: 20px auto;
+}
+.timeline-btn {
+  padding: 13px 20px;
+  background: hsl(210, 100%, 60%);
+  color: white;
+  font-weight: 800;
+  align-self: center;
+  border: none;
+  border-radius: 25px;
 }
